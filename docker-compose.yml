@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    lightttpd:
+        ports:
+            - '80'
+        volumes:
+            - './www-data:/var/www'
+            - './data:/home/infoblox'
+        image: johnneerdael/lighttpd2
